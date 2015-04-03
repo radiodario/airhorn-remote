@@ -7,10 +7,11 @@ var io = require('socket.io')(server);
 
 server.listen(process.env.PORT);
 
+app.use(express.static('./static'))
 
-app.get('/airhorn', function(req, res, next) {
+app.get('/airhorn', cors(), function(req, res, next) {
    io.emit('airhorn');
-   res.send(200);
+   res.sendStatus(200);
 });
 
 io.on('airhorn', function(a) {
