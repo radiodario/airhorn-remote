@@ -5,5 +5,6 @@ button.addEventListener('click', function() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET","/airhorn",true);
   xmlhttp.send();
+  ga('send', 'event', 'airhorn', 'button', audio_files[idx]);
 });
 },{}]},{},[1])
