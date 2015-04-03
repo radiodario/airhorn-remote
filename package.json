@@ -1,0 +1,11 @@
+{
+  "name": "airhorn-remote",
+  "version": "1.0.0",
+  "description": "a remote trigger for airhorns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
